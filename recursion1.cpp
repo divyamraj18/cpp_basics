@@ -11,7 +11,7 @@ void fun(int n)
 }
 int main()
 {
-	int n=10;
+	int n=5;
 	fun(n);
 	return 0;
 }

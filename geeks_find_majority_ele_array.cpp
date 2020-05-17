@@ -80,4 +80,31 @@ int main() {
 	return 0;
 }
 
+//another method 
+int majorityElement(int a[], int size)
+{
+int maj=size/2;
+    if(size==1)
+    return a[0];
+    else
+    {
+    
+    
+    for(int i=0;i<size;i++)
+    {
+        int cnt=0;
+        for(int j=i+1;j<size;j++)
+        {
+            if(a[i]==a[j])
+            {
+                cnt++;
+            }
+            if(cnt>=maj)
+            return a[i];
+        }
+    }
+    return -1;
+    }
+}
+
 

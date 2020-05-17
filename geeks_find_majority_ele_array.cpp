@@ -33,52 +33,52 @@ Testcase 1: Since, 3 is present more than N/2 times, so it is the majority eleme
 #include <iostream>
 using namespace std;
 
-int main() {
-	//code
-	int t;
-	cin>>t;
-	for(int s=0;s<t;s++)
-	{
-	    int flag=0;
-	    int ele;
-	    int n;
-	    cin>>n;
-	    int a[n];
-	    int i;
-	    for(i=0;i<n;i++)
-	    {
-	        cin>>a[i];
-	    }
-	    int max=a[0];
-	    for(i=1;i<n;i++)
-	    {
-	        if(a[i]>max)
-	            max=a[i];
-	    }
-	    int b[max+1];
-	    for(i=0;i<=max;i++)
-	    {
-	        b[i]=0;
-	    }
-	    for(i=0;i<n;i++)
-	    {
-	        b[a[i]]++;
-	    }
-	    for(i=0;i<=max;i++)
-	    {
-	        if(b[i]>n/2)
-	        {
-	            flag=1;
-	            ele=i;
-	        }
-	    }
-	    if(flag!=1)
-	        cout<<-1<<endl;
-	    else 
-	        cout<<ele<<endl;
-	}
-	return 0;
-}
+// int main() {
+// 	//code
+// 	int t;
+// 	cin>>t;
+// 	for(int s=0;s<t;s++)
+// 	{
+// 	    int flag=0;
+// 	    int ele;
+// 	    int n;
+// 	    cin>>n;
+// 	    int a[n];
+// 	    int i;
+// 	    for(i=0;i<n;i++)
+// 	    {
+// 	        cin>>a[i];
+// 	    }
+// 	    int max=a[0];
+// 	    for(i=1;i<n;i++)
+// 	    {
+// 	        if(a[i]>max)
+// 	            max=a[i];
+// 	    }
+// 	    int b[max+1];
+// 	    for(i=0;i<=max;i++)
+// 	    {
+// 	        b[i]=0;
+// 	    }
+// 	    for(i=0;i<n;i++)
+// 	    {
+// 	        b[a[i]]++;
+// 	    }
+// 	    for(i=0;i<=max;i++)
+// 	    {
+// 	        if(b[i]>n/2)
+// 	        {
+// 	            flag=1;
+// 	            ele=i;
+// 	        }
+// 	    }
+// 	    if(flag!=1)
+// 	        cout<<-1<<endl;
+// 	    else 
+// 	        cout<<ele<<endl;
+// 	}
+// 	return 0;
+// }
 
 //another method 
 int majorityElement(int a[], int size)
